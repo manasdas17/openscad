@@ -84,7 +84,6 @@
 #include <boost/version.hpp>
 #include <boost/foreach.hpp>
 #include <sys/stat.h>
-#include <qt4/QtGui/qwidget.h>
 
 #ifdef ENABLE_CGAL
 
