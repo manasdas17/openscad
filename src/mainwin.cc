@@ -620,6 +620,8 @@ MainWindow::setFileName(const QString &filename)
 		QDir::setCurrent(fileinfo.dir().absolutePath());
 	}
 	setWindowTitle(QString("OpenSCAD - ") + this->documentTitle + "[*]");
+	editorTopLevelChanged(editorDock->isFloating());
+	consoleTopLevelChanged(consoleDock->isFloating());
 }
 
 void MainWindow::updateRecentFiles()
